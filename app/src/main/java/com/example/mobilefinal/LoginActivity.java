@@ -1,6 +1,4 @@
 /**
- * The HelloWorld program implements an application that
- * simply displays "Hello World!" to the standard output.
  *
  * @author  THTN
  * @version 1.2
