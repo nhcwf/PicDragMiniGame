@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/dark_green"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_highscores"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:layout_marginHorizontal="81dp"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:textColor="@color/light_yellow"
+        android:textAlignment="center"
+        android:text="@string/title_highscores"
+        android:background="@drawable/rounded_corner_light_green"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ListView
+        android:id="@+id/lv_highscores_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="81dp"
+        android:layout_marginBottom="90dp"
+        android:layout_marginHorizontal="6dp"
+        android:background="@drawable/rounded_corner_light_green"
+        app:layout_constraintBottom_toTopOf="@id/ll_highscores_table_buttons"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_highscores" />
+
+    <LinearLayout
+        android:id="@+id/ll_highscores_table_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:layout_marginHorizontal="24dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <Button
+            android:id="@+id/btn_logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="6dp"
+            android:backgroundTint="@color/orange"
+            android:textColor="@color/light_yellow"
+            android:layout_weight="1"
+            android:text="@string/title_logout" />
+
+        <Button
+            android:id="@+id/btn_play_again"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:backgroundTint="@color/orange"
+            android:textColor="@color/light_yellow"
+            android:layout_weight="1"
+            android:text="@string/title_play_again" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
