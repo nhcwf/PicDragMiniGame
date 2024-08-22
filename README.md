@@ -1,2 +1,2 @@
 # PicDragMiniGame
-PicDrag Mini Game
+Đồ án môn học Mobile Device Programming.
